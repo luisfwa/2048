@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<!-- saved from url=(0039)https://gabrielecirulli.github.io/2048/ -->
+<html lang="en" manifest="cache.appcache"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  <title>2048</title>
+
+  <link href="./2048_files/main.css" rel="stylesheet" type="text/css">
+  <link rel="shortcut icon" href="https://gabrielecirulli.github.io/2048/favicon.ico">
+  <link rel="apple-touch-icon" href="https://gabrielecirulli.github.io/2048/meta/apple-touch-icon.png">
+  <link rel="apple-touch-startup-image" href="https://gabrielecirulli.github.io/2048/meta/apple-touch-startup-image-640x1096.png" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)"> <!-- iPhone 5+ -->
+  <link rel="apple-touch-startup-image" href="https://gabrielecirulli.github.io/2048/meta/apple-touch-startup-image-640x920.png" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 2)"> <!-- iPhone, retina -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, target-densitydpi=160dpi, initial-scale=1.0, maximum-scale=1, user-scalable=no, minimal-ui">
+  <meta name="format-detection" content="telephone=no">
+
+  <meta name="apple-itunes-app" content="app-id=868076805">
+
+  <meta property="og:title" content="2048">
+  <meta property="og:site_name" content="2048">
+  <meta property="og:description" content="Join the numbers and get to the 2048 tile! Careful: this game is extremely addictive!">
+  <meta property="og:image" content="http://gabrielecirulli.github.io/2048/meta/og_image.png">
+
+  <meta name="twitter:card" content="app">
+  <meta name="twitter:site" content="@gabrielecirulli">
+  <meta name="twitter:title" content="2048">
+  <meta name="twitter:description" content="Join the numbers and get to the 2048 tile! Careful: this game is extremely addictive!">
+  <meta name="twitter:image" content="http://gabrielecirulli.github.io/2048/meta/og_image.png">
+  <meta name="twitter:url" content="http://gabrielecirulli.github.io/2048/">
+  <meta name="twitter:app:country" content="US">
+  <meta name="twitter:app:name:iphone" content="2048">
+  <meta name="twitter:app:id:iphone" content="868076805">
+  <meta name="twitter:app:url:iphone" content="https://itunes.apple.com/us/app/2048-by-gabriele-cirulli/id868076805">
+  <meta name="twitter:app:name:ipad" content="2048">
+  <meta name="twitter:app:id:ipad" content="868076805">
+  <meta name="twitter:app:url:ipad" content="https://itunes.apple.com/us/app/2048-by-gabriele-cirulli/id868076805">
+  <meta name="twitter:app:name:googleplay" content="2048">
+  <meta name="twitter:app:id:googleplay" content="com.gabrielecirulli.app2048">
+  <meta name="twitter:app:url:googleplay" content="https://play.google.com/store/apps/details?id=com.gabrielecirulli.app2048">
+<script type="text/javascript" charset="utf-8" async="" src="./2048_files/button.552a34de542f2646ca0c08da6760c341.js"></script></head>
+<body>
+  <div class="container">
+    <div class="heading">
+      <h1 class="title">2048</h1>
+      <div class="scores-container">
+        <div class="score-container">0</div>
+        <div class="best-container">0</div>
+      </div>
+    </div>
+
+    <div class="above-game">
+      <p class="game-intro">Join the numbers and get to the <strong>2048 tile!</strong></p>
+      <a class="restart-button">New Game</a>
+    </div>
+
+    <div class="app-notice">
+      <span class="notice-close-button">x</span>
+      <p><strong class="important">New:</strong> Get the new 2048 app for <a href="https://itunes.apple.com/us/app/2048-by-gabriele-cirulli/id868076805" target="_blank">iOS</a> and <a href="https://play.google.com/store/apps/details?id=com.gabrielecirulli.app2048" target="_blank">Android!</a></p>
+    </div>
+
+    <div class="game-container">
+      <div class="game-message">
+        <p></p>
+        <div class="lower">
+	        <a class="keep-playing-button">Keep going</a>
+          <a class="retry-button">Try again</a>
+        </div>
+      </div>
+
+      <div class="grid-container">
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+      </div>
+
+      <div class="tile-container"><div class="tile tile-2 tile-position-3-3 tile-new"><div class="tile-inner">2</div></div><div class="tile tile-2 tile-position-4-3 tile-new"><div class="tile-inner">2</div></div></div>
+    </div>
+
+  <script src="./2048_files/bind_polyfill.js"></script>
+  <script src="./2048_files/classlist_polyfill.js"></script>
+  <script src="./2048_files/animframe_polyfill.js"></script>
+  <script src="./2048_files/keyboard_input_manager.js"></script>
+  <script src="./2048_files/html_actuator.js"></script>
+  <script src="./2048_files/grid.js"></script>
+  <script src="./2048_files/tile.js"></script>
+  <script src="./2048_files/local_storage_manager.js"></script>
+  <script src="./2048_files/game_manager.js"></script>
+  <script src="./2048_files/application.js"></script>
+  <script src="./2048_files/ai.js"></script>
+  <script src="./2048_files/interface.js"></script>
+  <script src="./2048_files/pleb.js"></script>
+  <script src="./2048_files/neuron.js"></script>
+  <script src="./2048_files/layer.js"></script>
